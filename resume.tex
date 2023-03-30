@@ -1,0 +1,176 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for CV/Resume
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+%%==================================================================%%
+%%==================================================================%%
+%%                                                                  %%
+%%        THIS IS MY MODIFIED PERSONAL TEMPLATE INTENDED FOR        %%
+%%                SHARING AND EDUCATIONAL PURPOSES                  %%
+%%                                                                  %%
+%%                  OPEN THE ORIGINAL TEMPLATE AT                   %%
+%%                                                                  %%
+%% https://www.overleaf.com/latex/templates/awesome-cv/dfnvtnhzhhbm %%
+%%                                                                  %%
+%%==================================================================%%
+%%==================================================================%%
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+% In the U.S and Canada, Letter Size paper (8.5 in x 11 in) is standard. While the rest of the world, A4 paper (210 mm x 297 mm) is standard,
+% Command underneath pt sizes are 10, 11, and 12, Other ones don't work.
+\documentclass[12pt, a4paper]{awesome-cv}
+%\documentclass[12pt, letterpaper]{awesome-cv} 
+
+\usepackage{multicol} % This is to make multi columns section.
+
+\usepackage{tasks} % This is also to make multi columns section. Not necessary.
+
+\usepackage{hyperref} % This is to embed hyperlinks.
+
+\usepackage{comment} % This is to make multi line comments
+
+\usepackage{fontawesome5} % This is to change to using fontawesome5 package
+
+
+% Configure page margins with geometry
+\geometry{left=1cm, top=0.5cm, right=1cm, bottom=1cm, footskip =0.1cm} 
+% (Left Margin+ Right Margin) / (Top Margin + Bottom Margin) = (0.8 + 0.8) / (0.5 + 0.5) = 1.6
+% 1.6 is approximately the golden ratio
+
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange, awesome-nephritis, awesome-concrete, awesome-darknight
+% Uncomment on \colorlet (by removing the % sign) if you would like to use Awesome Colors
+%\colorlet{awesome}{awesome-skyblue}
+
+% Probably don't use color due to HR discrimination
+% On second thought, I like color better
+% Change Hex Code inside the third bracket if you would like to use another color
+\definecolor{awesome}{HTML}{000000} 
+% A nice blue color that I like is 145a7d
+% No color or completely back color is 000000
+
+% Colors for text
+% Text types are in order except lighttext
+\definecolor{darktext}{HTML}{000000}
+\definecolor{text}{HTML}{000000}
+\definecolor{graytext}{HTML}{000000}
+% Lightext is for the personal address 
+\definecolor{lighttext}{HTML}{000000}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textemdash\quad}
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+% \photo[rectangle,edge,right]{./examples/profile}
+%\vspace*{-4mm}
+\name{}{Arham Ahmer}
+\position{3rd Year Computer Science Student}
+\address{Pasadena, South Australia 5042}
+
+\mobile{(+61) 0469 432 053}
+\email{arhambinahmer23@gmail.com}
+%\homepage{www.posquit0.com}
+%\addresstwo{address}
+%\github{posquit0}
+\linkedin{arhamahmer}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \medium{madium-id}
+% \googlescholar{googlescholar-id}{name-to-display}
+%\citizenship{citizenship}
+
+%% \firstname and \lastname will be used
+% \googlescholar{googlescholar-id}{}
+% \extrainfo{extra informations}
+% \extrainfotwo{second extra information}
+
+%\quote{``Be the change that you want to see in the world."}
+
+% Completely cover the cv section with color instead of partially cover
+\makeatletter
+\def\@sectioncolor{\color{awesome}}
+\makeatother
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[L]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+
+% Please keep the footer in order to share the template
+
+\makecvfooter
+  {}
+  {}
+  {\thepage}
+
+
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%   or create a new file by right-clicking resume folder and add new file
+%   then add \input{file_name} to the code underneath
+%-------------------------------------------------------------------------------
+
+% To remove each section comment on it (by adding % sign before the \input)
+
+% Summary is usually not needed for resume
+\input{resume/summary.tex}
+
+\input{resume/education.tex}
+\input{resume/experience.tex}
+%\input{resume/honors.tex}
+% Commented two lines below because there's not enough space
+%\input{resume/presentation.tex}
+%\input{resume/writing.tex}
+\input{resume/relevant coursework}
+\input{resume/extracurricular.tex}
+\input{resume/committees.tex}
+
+
+%-------------------------------------------------------------------------------
+\end{document}
+
+%==================================================================%
+%==================================================================%
+%                                                                  %
+%                  OPEN THE ORIGINAL TEMPLATE AT                   %
+%                                                                  %
+% https://www.overleaf.com/latex/templates/awesome-cv/dfnvtnhzhhbm %
+%                                                                  %
+%==================================================================%
+%==================================================================%

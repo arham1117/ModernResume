@@ -1,0 +1,153 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for Cover Letter
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Authors:
+% Claud D. Park <posquit0.bj@gmail.com>
+% Lars Richter <mail@ayeks.de>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+\usepackage{multicol} % This is to make multi columns section.
+
+\usepackage{tasks} % This is also to make multi columns section. Not necessary.
+
+\usepackage{hyperref} % This is to embed hyperlinks.
+
+\usepackage{comment} % This is to make multi line comments
+
+\usepackage{fontawesome5} % This is to change to using fontawesome5 package
+
+
+% Configure page margins with geometry
+\geometry{left=1cm, top=0.5cm, right=1cm, bottom=0.7cm, footskip =0.1cm} 
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange, awesome-nephritis, awesome-concrete, awesome-darknight
+% Uncomment on \colorlet (by removing the % sign) if you would like to use Awesome Colors
+%\colorlet{awesome}{awesome-skyblue}
+
+% Probably don't use color due to HR discrimination
+% On second thought, I like color better
+% Change Hex Code inside the third bracket if you would like to use another color
+\definecolor{awesome}{HTML}{000000} 
+% A nice blue color that I like is 145a7d
+% No color or completely back color is 000000
+
+% Colors for text
+% Text types are in order except lighttext
+\definecolor{darktext}{HTML}{000000}
+\definecolor{text}{HTML}{000000}
+\definecolor{graytext}{HTML}{000000}
+% Lightext is for the personal address 
+\definecolor{lighttext}{HTML}{000000}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textemdash\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+%\photo[circle,noedge,left]{./examples/profile}
+\name{}{Arham Ahmer}
+\position{3rd Year Computer Science Student}
+\address{Pasadena, South Australia 5042}
+
+\mobile{(+61) 0469432053}
+\email{arhambinahmer23@gmail.com}
+%\homepage{www.posquit0.com}
+%\github{posquit0}
+\linkedin{arhamahmer}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \medium{madium-id}
+% \googlescholar{googlescholar-id}{name-to-display}
+%% \firstname and \lastname will be used
+% \googlescholar{googlescholar-id}{}
+% \extrainfo{extra informations}
+
+
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+\recipient
+  {Recruitment Manager}
+  {Deloitte\\Adelaide, SA, 5000}
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the letter
+\lettertitle{RE: Deloitte Risk Advisory - Data \& Analytics - 2024 Graduate Program}
+% How the letter is opened
+\letteropening{Dear Hiring Manager,}
+% How the letter is closed
+\letterclosing{Sincerely,}
+% Any enclosures with the letter
+%\letterenclosure[Attached]{Curriculum Vitae}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[L]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Arham Ahmer~~~·~~~Cover Letter}
+  {}
+
+% Print the title with above letter informations
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+I am excited to apply for the Risk Advisory Data \& Analytics 2024 Graduate Program at Deloitte. I am currently studying in my third and final year of my Bachelor of Computer Science degree at the University of Adelaide. Undertaking a major in Data Science, I have gained a strong foundation in statistical and machine learning techniques and have acquired proeficiency in Python and R.
+
+Through my coursework and several statistical projects, I have gained practical skills in cleaning, preprocessing and analysing datasets of varying sizes. In addition,  I have gained a comprehensive understanding of data structures, algorithims and programming concepts and have utilised these to implement machine learning models for different data analysis tasks. These experiences have equipped me with the necessary skills to apply statistical and machine learning techniques to real-world problems, and I am positive that I can employ these skills effectively in the Risk Advisory Data \& Analytics program.
+  
+Outside my study, during my ongoing employment at Woolworths, I have developed strong interpersonal skills and have thrived in a collaborative environment. My experience working in a fast-paced retail environment taught me how to work efficiently under pressure, manage my time effectively and prioritize tasks to meet deadlines. I am responsible for managing customer complaints and resolving issues, which has enabled me to communicate effectively and professionaly with clients in challenging situations. These skills, combined with my passion for data science, make me an ideal candidate for the Risk Advisory Data \& Analytics 2024 Graduate Program. 
+  
+I am thrilled at the prospect of joining Deloitte, a company known for its exceptional services and expertise in the industry. I am particularly drawn to the Risk Advisory Data \& Analytics program because of my interest in analysing large datasets and the program's emphasis on gathering insights from data analysis to provide value to clients. Thank you for taking the time to review my application. I am excited about the opportunity to contribute to Deloitte's ongoing success. 
+
+
+\end{cvletter}
+
+
+%-------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter informations
+\makeletterclosing
+
+\end{document}
